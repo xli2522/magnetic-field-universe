@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-io_utils.py
+fetch_ascii.py
 -----------
 
 Utilities for resolving data paths and fetching ASCII tables, with

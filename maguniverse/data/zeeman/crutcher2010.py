@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-zeeman.py
+crutcher2010.py
 ----------
 
 Fetch and process the Crutcher et al. (2010) Zeeman data.
