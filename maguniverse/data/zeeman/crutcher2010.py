@@ -88,20 +88,20 @@ if __name__ == "__main__":
     """
     Example usage:
 
-    >>> from maguniverse import __prent_dir__
+    >>> from maguniverse import __parent_dir__
     >>> import os
 
     >>> csv_path = os.path.join(
-    >>>     __prent_dir__, 'datafiles/zeeman/crutcher2010_processed.txt'
+    >>>     __parent_dir__, 'datafiles/zeeman/crutcher2010_processed.txt'
     >>> )
     >>> df = get_crutcher2010(save_path=csv_path)
     >>> print(df.head())
     """
     import os
-    from maguniverse import __prent_dir__
+    from maguniverse import __parent_dir__
 
     output_path = os.path.join(
-        __prent_dir__, 'datafiles/zeeman/crutcher2010_processed.txt'
+        __parent_dir__, 'datafiles/zeeman/crutcher2010_processed.txt'
     )
     df = get_crutcher2010(save_path=output_path)
     print(df.head())

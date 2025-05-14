@@ -13,7 +13,7 @@ import webbrowser
 
 import requests
 
-from maguniverse import __prent_dir__ as sys_parent
+from maguniverse import __parent_dir__ as sys_parent
 
 
 def get_default_data_paths(file_path, file_url):
