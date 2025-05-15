@@ -1,7 +1,11 @@
+# python and packages
 __pycache__
 *.egg-info
 *.egg
 *.pyc
+
+# development files
+datafiles/
 
 # tools
 .qodo
