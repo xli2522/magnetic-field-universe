@@ -15,7 +15,7 @@ import pandas as pd
 from maguniverse.data.polarization import polarization_source
 from maguniverse.utils import get_ascii, get_default_data_paths
 
-def get_dotson2010(file_path=None, file_url=None, save_path=None):
+def get_dotson2010(file_path=None, file_url=None, save_path=None, save_src_data_path=None):
     """
     Load the Dotson et al. (2010) polarization measurements into a DataFrame.
 
@@ -27,6 +27,8 @@ def get_dotson2010(file_path=None, file_url=None, save_path=None):
         URL to download the ASCII data. If None, defaults are used.
     save_path : str, optional
         If provided, the resulting DataFrame is written to this CSV path.
+    save_src_data_path : str, optional
+        If provided, the raw ASCII data is saved to this path.
 
     Returns
     -------
@@ -52,7 +54,7 @@ def get_dotson2010(file_path=None, file_url=None, save_path=None):
         )
 
     # Fetch raw ASCII (prefers local copy to avoid CAPTCHA)
-    raw = get_ascii(file_path, file_url, fmt='txt')
+    raw = get_ascii(file_path, file_url, save_src_data_path, fmt='txt')
 
     # Define column names and read into DataFrame
     column_names = [
